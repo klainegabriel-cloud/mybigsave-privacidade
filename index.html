@@ -158,9 +158,13 @@ a você exatamente o que está sendo escolhido e não dá ao aplicativo acesso a
 <h3>7. O que nós não fazemos</h3>
 <ul>
 <li>Não temos servidor e não recebemos seus dados.</li>
-<li>Não usamos Firebase, Google Analytics, Crashlytics ou qualquer ferramenta de telemetria. Isso é
-verificado automaticamente a cada build: se alguém adicionar uma dessas bibliotecas, o
-aplicativo deixa de compilar.</li>
+<li>Não integramos Firebase Analytics, Google Analytics nem Crashlytics, e não temos nenhuma
+ferramenta própria de métricas de uso. Um teste automático do projeto falha se alguém
+adicionar uma dessas bibliotecas.</li>
+<li>As bibliotecas do Google que o aplicativo usa para os anúncios e para a compra do Pro enviam
+ao Google dados técnicos e de diagnóstico — por exemplo, falhas de conexão com a loja e
+informações do aparelho e da rede — para operar esses serviços. Seus textos, emoções e
+fotografias nunca são entregues a essas bibliotecas.</li>
 <li>Não vendemos, alugamos nem compartilhamos seu conteúdo com ninguém, porque não o temos.</li>
 <li>Não criamos perfil seu, não rastreamos seu uso e não personalizamos anúncios com base no que
 você escreve.</li>
